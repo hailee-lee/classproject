@@ -1,0 +1,126 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+// .overflow {
+//   width: 300px;
+//   height: 300px;
+//   margin-bottom: 200px;
+//   border: 1px solid black;
+//   overflow: visible;
+// }
+
+// .overflow .children {
+//   background-color: #dbdbdb;
+ 
+// }
+
+// .overflow.visible {
+//   overflow: visible;
+// }
+// .overflow.visible .children{
+//   width: 450px;
+//   height: 100px;
+// }
+// .overflow.hidden {
+//   overflow: hidden;
+// }
+// .overflow.hidden .children{
+//   width: 450px;
+//   height: 100px;
+// }
+// .overflow.scroll-x {
+//   overflow-x:scroll;
+// }
+// .overflow.scroll-x .children{
+//   width: 450px;
+//   height: 100px;
+// }
+// .overflow.scroll-y {
+//   overflow-y:scroll;
+// }
+// .overflow.scroll-y .children{
+//   width: 100px;
+//   height: 450px;
+// }
+// .overflow.auto1 {
+//   overflow:auto;
+// }
+// .overflow.auto1 .children{
+//   width: 450px;
+//   height: 450px;
+// }
+
+// .overflow.auto2 {
+//   overflow: auto;
+// }
+// .overflow.auto2 .children{
+//   width: 250px;
+//   height: 250px;
+// }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .overflow {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 200px;
+    border: 1px solid black;
+  
+    .children {
+      background-color: #dbdbdb;
+    }
+    
+    &.visible {
+      overflow: visible;
+    
+      .children{
+        width: 450px;
+        height: 100px;
+      }
+    }
+    
+    &.hidden {
+      overflow: hidden;
+    
+      .children{
+        width: 450px;
+        height: 100px;
+      }
+    }
+    &.scroll-x {
+      overflow-x: scroll;
+    
+      .children{
+        width: 450px;
+        height: 100px;
+      }
+    }
+    &.scroll-y {
+      overflow-y: scroll;
+    
+      .children{
+        width: 100px;
+        height: 450px;
+      }
+    }
+    &.auto1 {
+      overflow: auto;
+    
+      .children{
+        width: 450px;
+        height: 450px;
+      }
+    }
+    
+    &.auto2 {
+      overflow: auto;
+    
+      .children{
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }

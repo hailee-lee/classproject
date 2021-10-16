@@ -1,0 +1,55 @@
+h1.my {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+h1.my .line {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid black;
+  position: absolute;
+  z-index: -1;
+}
+
+h1.my .title {
+  background-color: #fff;
+  display: inline-block;
+}
+
+h1.copy-from {
+  overflow: hidden;
+  text-align: center;
+}
+
+h1.copy-from::before, h1.copy-from::after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1.copy-from::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1.copy-from::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/*# sourceMappingURL=ex4.css.map */

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  
+}
+.header-content{width:1370px;
+margin:0 auto;}
+ul,li{list-style: none;
+  padding: 0;
+  margin: 0;}
+ul{display: flex;
+  flex-wrap: row;}
+li {
+  
+  width: 96px;
+  height: 73px;
+  font-size: 12px;
+  font-weight:400;
+  color: #909090;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 73px;
+}
+
+header {
+  border-bottom: 1px solid #efefef;
+}
