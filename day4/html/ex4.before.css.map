@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,YAAY;CACtB",
+    "sources": [
+        "ex4.before.scss"
+    ],
+    "names": [],
+    "file": "ex4.before.css"
+}

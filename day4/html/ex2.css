@@ -1,0 +1,64 @@
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+ul li .tooltip {
+  color: blanchedalmond;
+  white-space: nowrap;
+  background-color: black;
+  padding: 12px 0;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 30px;
+  right: -40px;
+  top: 20px;
+  display: none;
+}
+
+ul li .tooltip::after {
+  content: '';
+  border-top: 10px solid #00000000;
+  border-bottom: 10px solid #000000;
+  border-left: 10px solid #00000000;
+  border-right: 10px solid #00000000;
+  position: absolute;
+  right: calc(50% - 10px);
+  top: -19px;
+}
+
+ul li:hover .tooltip {
+  display: block;
+}
+
+ul li::after {
+  content: '';
+  width: 2px;
+  height: 13px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -12px;
+}
+
+ul li:last-child::after {
+  display: none;
+}
+/*# sourceMappingURL=ex2.css.map */

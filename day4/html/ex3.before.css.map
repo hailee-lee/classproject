@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,YAAY;CAEtB",
+    "sources": [
+        "ex3.before.scss"
+    ],
+    "names": [],
+    "file": "ex3.before.css"
+}
