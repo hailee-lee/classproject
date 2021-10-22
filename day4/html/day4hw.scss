@@ -30,7 +30,7 @@ header {
     .menu-list {
       display: flex;
 
-      li{
+      &>li{
         @include flex-row;
         width: 96px;
         height: 73px;
@@ -40,7 +40,7 @@ header {
         position:relative;
 
         &:not(:first-child) {
-        // margin-left: 20px;
+        margin-left: 20px;
         }
       
             .sub-menu{
@@ -50,22 +50,29 @@ header {
                 position: absolute;
                 background-color: #ffffff;
                 left: 30px;
-                top: 80px;
+                top: 90px;
+                display: none;
+                margin-top: 10px;
+            
                 
       
                 &>li{
-                    font-size:12px;
-                    color: #909090;
+                    font-size:15px;
+                    color: #797979;
+                    margin-bottom: 30px;
+                    margin-left:20px;
                     }
 
                     &>li::after{
-                    width:250px;
+                    width:240px;
                     height:1px;
                     display: block;
-                    background-color: #696969;
+                    background-color: #dadada;
                     position:absolute;
-                    top:300px;
-                    right:5px;
+                    // top:20px; 왜 빼줘야 하는지 모르겠다 ㅠㅠ
+                    right:10px;
+                    content:'';
+                    margin-top:5px;
                     }
                 }
 

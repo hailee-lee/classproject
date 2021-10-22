@@ -40,7 +40,7 @@ header .header-content .menu-list {
   display: flex;
 }
 
-header .header-content .menu-list li {
+header .header-content .menu-list > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +58,11 @@ header .header-content .menu-list li {
   position: relative;
 }
 
-header .header-content .menu-list li .sub-menu {
+header .header-content .menu-list > li:not(:first-child) {
+  margin-left: 20px;
+}
+
+header .header-content .menu-list > li .sub-menu {
   width: 260px;
   height: 204px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -66,25 +70,30 @@ header .header-content .menu-list li .sub-menu {
   position: absolute;
   background-color: #ffffff;
   left: 30px;
-  top: 80px;
+  top: 90px;
   display: none;
+  margin-top: 10px;
 }
 
-header .header-content .menu-list li .sub-menu .li {
-  font-size: 50px;
+header .header-content .menu-list > li .sub-menu > li {
+  font-size: 15px;
+  color: #797979;
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
-header .header-content .menu-list li .sub-menu .li::after {
-  width: 250px;
+header .header-content .menu-list > li .sub-menu > li::after {
+  width: 240px;
   height: 1px;
   display: block;
-  background-color: #862121;
+  background-color: #dadada;
   position: absolute;
-  top: 300px;
-  right: 5px;
+  right: 10px;
+  content: '';
+  margin-top: 5px;
 }
 
-header .header-content .menu-list li:hover.sub-menu {
+header .header-content .menu-list > li:hover .sub-menu {
   display: block;
 }
 
