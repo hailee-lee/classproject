@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+
+
+header {
+    width: 768px;
+    border-bottom: 1px solid #efefef;
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+
+        &>i {
+            color: #626262;
+            font-size: 20px;
+            // margin-left: 26px;
+            // margin-top: 12px;
+            margin: 12px 26px;
+
+
+            .menu-list {
+                width: 250px;
+                height: 1080px;
+                border-right: 1px solid #efefef;
+                display: none;
+                background-color: #ffffff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                span {
+                    font-size: 16px;
+                    color: #000000;
+                    display: block;
+                    margin-left: 40px;
+                    margin-top: 25px;
+                    width: 51px;
+                    height: 21px;
+                    margin-bottom: 38px;
+                }
+
+                &>li {
+                    font-size: 12px;
+                    color: #909090;
+                    margin-left: 40px;
+                    margin-bottom: 24px;
+
+                    // &:first-child {
+                    //     margin-top: 84px;
+                    // }
+
+                    .sub-menu {
+
+                        &>li {
+                            margin-top: 16px;
+                        }
+                    }
+
+                }
+
+
+
+            }
+        }
+
+        &:hover .menu-list {
+            display: block;
+        }
+
+
+
+
+
+        .action-wrapper {
+            display: flex;
+            margin-top: 12px;
+
+            .social-link-list {
+                display: flex;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 20px;
+                    // margin-top: 12px;
+                    // margin-bottom: 12px; 위아래 마진 안 줬는데 알아서 간격 생기는건 왜죵? 햄버거 바에 줘 그른가? 아님 플렉스 땜에?
+                    font-size: 20px;
+                    list-style: none;
+                    flex-direction: row;
+                    // justify-content: space-between;
+                }
+
+                i {
+                    color: #626262;
+                }
+            }
+
+            .search-box {
+                margin: 0;
+                padding: 0;
+
+                i {
+                    color: #626262;
+                    font-size: 20px;
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 768px;
+  border-bottom: 1px solid #efefef;
+}
+
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+header .header-content > i {
+  color: #626262;
+  font-size: 20px;
+  margin: 12px 26px;
+}
+
+header .header-content > i .menu-list {
+  width: 250px;
+  height: 1080px;
+  border-right: 1px solid #efefef;
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header .header-content > i .menu-list span {
+  font-size: 16px;
+  color: #000000;
+  display: block;
+  margin-left: 40px;
+  margin-top: 25px;
+  width: 51px;
+  height: 21px;
+  margin-bottom: 38px;
+}
+
+header .header-content > i .menu-list > li {
+  font-size: 12px;
+  color: #909090;
+  margin-left: 40px;
+  margin-bottom: 24px;
+}
+
+header .header-content > i .menu-list > li .sub-menu > li {
+  margin-top: 16px;
+}
+
+header .header-content:hover .menu-list {
+  display: block;
+}
+
+header .header-content .action-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+}
+
+header .header-content .action-wrapper .social-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-content .action-wrapper .social-link-list li {
+  margin-right: 20px;
+  font-size: 20px;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .header-content .action-wrapper .social-link-list i {
+  color: #626262;
+}
+
+header .header-content .action-wrapper .search-box {
+  margin: 0;
+  padding: 0;
+}
+
+header .header-content .action-wrapper .search-box i {
+  color: #626262;
+  font-size: 20px;
+}
