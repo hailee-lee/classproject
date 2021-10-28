@@ -1,0 +1,32 @@
+.box {
+  margin-left: 50px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.box.shadow1 {
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+}
+
+.box.shadow2 {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+.box.shadow3 {
+  -webkit-box-shadow: 5px 5px 5px 5px black;
+          box-shadow: 5px 5px 5px 5px black;
+}
+
+.box.shadow4 {
+  -webkit-box-shadow: 0px 5px 5px 5px black;
+          box-shadow: 0px 5px 5px 5px black;
+}
+
+.box.shadow5 {
+  -webkit-box-shadow: -5px 5px 5px 5px black;
+          box-shadow: -5px 5px 5px 5px black;
+}

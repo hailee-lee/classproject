@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+header .menu-list li:hover .tooltip {
+  display: block;
+}
+
+header .menu-list li:not(:last-child)::after {
+  content: "";
+  height: 15px;
+  border-right: 1px solid black;
+  position: absolute;
+  right: 0;
+}
+
+header .menu-list li .tooltip {
+  display: none;
+  position: absolute;
+  bottom: -50px;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 16px;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+header .menu-list li .tooltip::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 8px);
+  border-top: 0px solid #ffffff00;
+  border-right: 8px solid #ffffff00;
+  border-bottom: 16px solid #333333;
+  border-left: 8px solid #ffffff00;
+}
