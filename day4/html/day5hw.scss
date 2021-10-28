@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+// --- padding: 0, margin: 0, list-style: none 중복되니까 한번에 빼는법 아시죵?
 
 header {
     width: 768px;
@@ -11,13 +12,15 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        // --- 세로정렬을 위한 center
+        align-items: center;
+        // --- 디자인 시안에 높이가 72인데 잡히지가 않아서 높이를 못맞추신거 같아요!
+        height: 72px;
         position: relative;
 
         &>i {
             color: #626262;
             font-size: 20px;
-            // margin-left: 26px;
-            // margin-top: 12px;
             margin: 12px 26px;
 
 
@@ -25,9 +28,12 @@ header {
                 width: 250px;
                 height: 1080px;
                 border-right: 1px solid #efefef;
-                display: none;
+                // display: none;
+                display: block;
                 background-color: #ffffff;
-                position: absolute;
+                // --- fixed로 해야 스크롤 해도 사이드바가 없어지지 않아요!
+                // position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 padding: 0;
@@ -51,27 +57,29 @@ header {
                     margin-left: 40px;
                     margin-bottom: 24px;
 
-                    // &:first-child {
-                    //     margin-top: 84px;
-                    // }
-
                     .sub-menu {
+                        // --- 스타일이 달라요!
+                        list-style: disc;
 
                         &>li {
                             margin-top: 16px;
                         }
                     }
-
                 }
-
-
-
             }
+
+            // --- hover를 i 태그 안으로 넣었어요!
+            // --- 근데 i 태그는 icon 태그니까 menu-list를 감싸면 안좋을거같네요
+            &:hover .menu-list {
+                display: block;
+            }
+
         }
 
-        &:hover .menu-list {
-            display: block;
-        }
+        // --- hover 가 header-content에 걸렸어요!
+        // &:hover .menu-list {
+        //     display: block;
+        // }
 
 
 
@@ -79,7 +87,9 @@ header {
 
         .action-wrapper {
             display: flex;
-            margin-top: 12px;
+            align-items: center;
+            // --- 부모요소에서 center를 맞춰주기 때문에 margin-top 제거
+            // margin-top: 12px;
 
             .social-link-list {
                 display: flex;
@@ -90,9 +100,11 @@ header {
                     margin-right: 20px;
                     // margin-top: 12px;
                     // margin-bottom: 12px; 위아래 마진 안 줬는데 알아서 간격 생기는건 왜죵? 햄버거 바에 줘 그른가? 아님 플렉스 땜에?
-                    font-size: 20px;
+                    // --- flex align-items 의 기본값이 stretch 라서 세로 크기를 자동으로 맞춰주네용!
+                    // --- align-items center 를 이용하면 margin-top을 이용하지 않아도 세로정렬이 가능합니다!
+                    // font-size: 20px;
                     list-style: none;
-                    flex-direction: row;
+                    // flex-direction: row;
                     // justify-content: space-between;
                 }
 
@@ -102,8 +114,9 @@ header {
             }
 
             .search-box {
-                margin: 0;
-                padding: 0;
+                // --- ?
+                // margin: 0;
+                // padding: 0;
 
                 i {
                     color: #626262;
