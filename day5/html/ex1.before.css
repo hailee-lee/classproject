@@ -18,4 +18,33 @@
   width: 24%;
   height: 200px;
   margin-bottom: 20px;
+  background-color: var(--color1);
+}
+
+:root {
+  --color1: rgb(10, 73, 245);
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --color1: rgb(10, 73, 245);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1493px) {
+  :root {
+    --color1: rgb(245, 18, 10);
+  }
+  .row .items {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 767px) {
+  :root {
+    --color1: rgb(10, 245, 10);
+  }
+  .row .items {
+    width: 100%;
+  }
 }
