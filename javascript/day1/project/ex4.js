@@ -2,11 +2,6 @@
 // console.log('divList: ', divList);
 // console.log('divList[0]: ', divList[0]);
 
-const divList = document.querySelectorAll('div')
-console.log(divList)
-
-
-
 // const spanList = document.getElementsByTagName('span')
 // console.log('spanList: ', spanList);
 
@@ -22,7 +17,7 @@ console.log(divList)
 // const h3FromId = document.getElementById('h3-id')
 // console.log('h3FromId: ', h3FromId);
 
-// const someList = document.querySelector('#h3-id')
+// const someList = document.querySelector('.some-list')
 // console.log('someList: ', someList);
 
 // const liList = document.querySelectorAll('li')
@@ -31,3 +26,10 @@ console.log(divList)
 
 // const liThird = document.querySelector('.li-third')
 // console.log('liThird: ', liThird);
+
+const yulim = document.querySelector('.div-class')
+console.log('yulim:', yulim);
+const yulim1 = document.querySelector('.some-list')
+console.log('yulim1', yulim1);
+const yulim2 = document.querySelectorAll('.some-item.li-third')
+console.log('yulim2:', yulim2);

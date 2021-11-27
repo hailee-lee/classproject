@@ -45,3 +45,24 @@
 
 // const sumResB = sum(3, 4)
 // console.log('sumResB: ', sumResB);
+// function pagination(page,limit) {
+
+//     let pageInfo={
+//             page:"3",
+//             limit:"5"
+//     }
+//     return pageInfo
+// }
+// pagination()
+
+function logger() {
+    console.log('this is my name is yulim')
+}
+logger()
+logger()
+
+function logge(myName) {
+    console.log('my name is yulim' + myName)
+}
+logge()
+
