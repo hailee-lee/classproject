@@ -1,0 +1,32 @@
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-list {
+  width: 200px;
+
+  .accordion-item {
+    h3 {
+      padding: 10px 20px;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .sub-list{
+      padding-left: 20px;
+      height: 0;
+      overflow: hidden;
+
+      .sub-item{
+        padding: 8px 12px;
+      }
+    }
+
+    &.open {
+      .sub-list {
+        height: auto;
+      }
+    }
+  }
+}

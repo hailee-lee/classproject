@@ -14,7 +14,7 @@ const qqImage = document.querySelector('.qq-image')
 // console.log('qqImage.style.border: ', qqImage.style.border);
 
 // const qqStyle = window.getComputedStyle(qqImage)
-// console.log('qqStyle: ', qqStyle);
+// console.log('qqStyle: ', qqStyle.borderRadius);
 
 
 // 클래스
@@ -22,7 +22,7 @@ const qqImage = document.querySelector('.qq-image')
 // console.log('qqImage.className: ', qqImage.className);
 // qqImage.className = qqImage + ' qq-big'
 
-// console.log('qqImage.classList: ', qqImage.classList);
 // qqImage.classList.add('qq-big')
-
 // qqImage.classList.remove('qq-big')
+
+// console.log('qqImage.classList: ', qqImage.classList);
