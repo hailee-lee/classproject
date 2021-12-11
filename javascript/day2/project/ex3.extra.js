@@ -11,7 +11,9 @@ function qqGoHome() {
   if (isQQHome) return
 
   const qqImageRect = qqImage.getBoundingClientRect()
+  console.log('qqImageRect: ', qqImageRect);
   const qqHomeRect = qqHome.getBoundingClientRect()
+  console.log('qqHomeRect: ', qqHomeRect);
 
 }
 
