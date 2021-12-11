@@ -2,7 +2,7 @@
 
 // while (true) {
 //   console.log('while 이 안끝나!!!')
-// }
+//  }
 
 
 // --- 조건이 들어간 while
