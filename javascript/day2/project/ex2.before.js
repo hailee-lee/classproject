@@ -5,7 +5,7 @@ const button = document.querySelector('.qq-button')
 console.log('button:', button)
 
 
-let move = 10
+let move = 70
 
 function imageqq() {
     move = move + 10
