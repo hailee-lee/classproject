@@ -18,3 +18,42 @@
 // 사용
 // const qqImage = document.querySelector('.qq-image')
 // const qqImageMovable = new ImageMovableClass(qqImage)
+
+
+const qqImage = document.querySelector(".qq-image")
+
+
+
+
+
+class ImageMovableClass {
+    image
+    left
+    top
+    moveDistance = 30
+
+    constructor(image) {
+        this.image = image
+        this.top = qqImage.getBoundingClientRect().top
+        this.left = qqImage.getBoundingClientRect().left
+    }
+
+    changeDistance(distance) {
+        this.moveDistance = distance
+    }
+
+
+    moveArrow(e) {
+        if (e.code === "Arrowright") {
+            this.left += this.moveDistance
+        }
+        else if (e.code === "Arrowleft") {
+            this.left -= this.moveDistance
+        }
+        this.image.style.left = this.left + "px"
+        // this.image.style.this.top = "px"
+    }
+
+}
+
+const qqImageMovable = new ImageMovableClass(qqImage)

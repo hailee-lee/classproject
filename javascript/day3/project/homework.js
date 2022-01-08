@@ -1,8 +1,8 @@
-var item = document.getElementsByClassName("item");
+var item = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < item.length; i++) {
-    item[i].addEventListener("click", function () {
+    accordion[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var sub = this.nextElementSibling;
         if (sub - item.style.maxHeight) {
@@ -12,3 +12,6 @@ for (i = 0; i < item.length; i++) {
         }
     });
 }
+
+remove
+open
